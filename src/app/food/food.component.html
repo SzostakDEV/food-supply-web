@@ -1,0 +1,8 @@
+<div class="row">
+  <h2>{{title}}</h2>
+</div>
+<div class="row" *ngIf="foodList">
+  <div class="collection with-header">
+    <a href="/food/{{food.id}}" class="collection-item" *ngFor="let food of foodList">{{food.name}}</a>
+  </div>
+</div>
